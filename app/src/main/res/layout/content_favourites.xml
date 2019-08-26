@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dim10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.FavouritesActivity"
+    tools:showIn="@layout/activity_favourites">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textSize="@dimen/dim20sp"
+    android:textColor="@color/colorPrimary"
+    android:lineSpacingExtra="@dimen/dim50dp"
+    android:id="@+id/watch"
+    />
+</LinearLayout>

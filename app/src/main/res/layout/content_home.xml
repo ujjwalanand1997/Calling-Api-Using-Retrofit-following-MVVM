@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.HomeActivity"
+    tools:showIn="@layout/activity_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim10dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/rec_layout"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular"
+            android:layout_weight="1"
+            android:padding="@dimen/dim20dp"
+            android:id="@+id/pop_btn"
+            android:layout_marginRight="@dimen/dim5dp"
+            android:background="@drawable/selected_btn"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_movie"
+            android:padding="@dimen/dim20dp"
+            android:layout_marginStart="@dimen/dim5dp"
+            android:layout_weight="1"
+            android:id="@+id/new_btn"
+            android:background="@drawable/selected_btn"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rec_movies"
+        android:layout_below="@id/rec_layout"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progress"
+        android:indeterminate="true"
+        />
+
+</RelativeLayout>
